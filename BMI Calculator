@@ -1,0 +1,20 @@
+using System;
+
+namespace Onil_Salazar_hw1_Program3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("----- BMI Calculator -----");
+            Console.WriteLine(" Insert Weight in kilograms=" + numb1);
+            double numb1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Insert Height in meters squared=");
+            double numb2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Body Mass Index =");
+            Console.WriteLine(numb1 / numb2);
+        }
+    }
+}
