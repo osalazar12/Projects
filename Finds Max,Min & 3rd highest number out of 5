@@ -1,0 +1,41 @@
+using System;
+
+namespace ConsoleApp38
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input;
+            int[] myarray = new int[5];
+
+            Console.WriteLine("Insert a Number:");
+            input = Console.ReadLine();
+            myarray[0] = int.Parse(input);
+
+            Console.WriteLine("Insert a Number:");
+            input = Console.ReadLine();
+            myarray[1] = int.Parse(input);
+
+            Console.WriteLine("Insert a Number:");
+            input = Console.ReadLine();
+            myarray[2] = int.Parse(input);
+
+            Console.WriteLine("Insert a Number:");
+            input = Console.ReadLine();
+            myarray[3] = int.Parse(input);
+
+            Console.WriteLine("Insert a Number:");
+            input = Console.ReadLine();
+            myarray[4] = int.Parse(input);
+
+            Array.Sort(myarray);
+            Console.WriteLine("Max Number:" + myarray[4]);
+            Console.WriteLine("Min Number:" + myarray[0]);
+            Console.WriteLine("3rd biggest number:" + myarray[2]);
+
+
+
+        }
+    }
+}
