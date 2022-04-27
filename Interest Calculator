@@ -1,0 +1,22 @@
+using System;
+
+namespace Onil_Salazar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("-----Interest Calculator by Onil Salazar-----");
+            
+            Console.WriteLine("PLease enter your balance in dollar (e.g., enter 100 for $100");
+            int numb1 = Convert.ToInt32(Console.ReadLine());// declares numb 1 as an integer, gives the user the ability to input the number and for system to read
+
+            Console.WriteLine("Please enter your annual interest rate in percentage(e.g., enter 4.5 for 4.5%");
+            double numb2 = Convert.ToDouble(Console.ReadLine());// declares numb 2 as a double, gives the user the ability to input decimals and for system to read
+
+            Console.WriteLine("The interest on the next monthly mortgage payment is");
+            Console.WriteLine(numb1 * (numb2 / 1200));
+   
+        }
+    }
+}
